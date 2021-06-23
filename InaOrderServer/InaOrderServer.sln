@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InaOrderServer", "InaOrderServer.csproj", "{51B72678-9F14-4123-A8A0-7BAC9D2225AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InaMenu", "..\InaMenu\InaMenu.csproj", "{D071BC45-746A-42FF-B107-DF0E1C217433}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B72678-9F14-4123-A8A0-7BAC9D2225AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B72678-9F14-4123-A8A0-7BAC9D2225AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B72678-9F14-4123-A8A0-7BAC9D2225AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B72678-9F14-4123-A8A0-7BAC9D2225AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D071BC45-746A-42FF-B107-DF0E1C217433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D071BC45-746A-42FF-B107-DF0E1C217433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D071BC45-746A-42FF-B107-DF0E1C217433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D071BC45-746A-42FF-B107-DF0E1C217433}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {153FE2AF-BE12-4A1D-99A6-A5F4CC5415E2}
+	EndGlobalSection
+EndGlobal
