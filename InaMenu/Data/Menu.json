@@ -1,0 +1,281 @@
+{
+  "0f281b63-68d8-45f0-a9d9-3d836ea01c57": {
+    "Id": "0f281b63-68d8-45f0-a9d9-3d836ea01c57",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "98a955c9-7e5f-4201-9334-f753002f1114": {
+    "Id": "98a955c9-7e5f-4201-9334-f753002f1114",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "6f9171a5-b3a0-4370-9b8a-96a740c4d232": {
+    "Id": "6f9171a5-b3a0-4370-9b8a-96a740c4d232",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "1a1827a9-bedd-4000-b315-690f3f971e15": {
+    "Id": "1a1827a9-bedd-4000-b315-690f3f971e15",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "c682deb9-a979-496b-9e7b-03cb6d97fddd": {
+    "Id": "c682deb9-a979-496b-9e7b-03cb6d97fddd",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "8af96c4e-0577-46c2-889f-9b938a6ab4ef": {
+    "Id": "8af96c4e-0577-46c2-889f-9b938a6ab4ef",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "7fa4bb98-b824-41a9-9a67-186ed0a857ce": {
+    "Id": "7fa4bb98-b824-41a9-9a67-186ed0a857ce",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "ab3cdf5a-f7ba-476e-a3cf-c65782c42d6f": {
+    "Id": "ab3cdf5a-f7ba-476e-a3cf-c65782c42d6f",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  },
+  "9bf584d1-6670-46b5-b39d-822718ada0bb": {
+    "Id": "9bf584d1-6670-46b5-b39d-822718ada0bb",
+    "Name": "string",
+    "Products": {
+      "additionalProp1": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp2": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      },
+      "additionalProp3": {
+        "Id": "string",
+        "Name": "string",
+        "Price": {
+          "Currency": 0,
+          "Quantity": 0.0
+        }
+      }
+    },
+    "Status": 0
+  }
+}
