@@ -1,7 +1,10 @@
 ﻿using InaMenu.Application;
+using InaMenu.Controllers.Menu;
 using InaMenu.Controllers.Menu.Package;
+using InaMenu.Filters;
 using InaMenu.MenuDomain;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -19,7 +22,7 @@ namespace InaMenu.Controllers
         {
             _repo = repo;
         }
-
+ 
         // GET: api/<MenuController>
         [HttpGet]
         public async Task<AllResponse> Get()
@@ -49,33 +52,21 @@ namespace InaMenu.Controllers
         }
 
         // POST api/<MenuController>
+        [MenuStatusNotDefinedExcpetionFilter]
         [HttpPost]
         public async Task<CreateResponse> Post(CreateRequest req)
         {
             CreateMenu createMenu = new CreateMenu(_repo);
 
-            Dictionary<string, MenuDomain.Product> products = new Dictionary<string, MenuDomain.Product>();
-
-            foreach(var kvp in req.products)
+            if (!Enum.IsDefined(typeof(MenuStatus), req.status))
             {
-                var Price = kvp.Value.Price;
-
-                products.Add(kvp.Key, new MenuDomain.Product(
-                    id: kvp.Value.Id,
-                    name: kvp.Value.Name,
-                    price: new MenuDomain.Price(
-                        currency: (Currency)Price.Currency,
-                        quantity: Price.Quantity
-                        )
-                ));
+                throw new MenuStatusNotDefinedException(req.status);
             }
-
-            var status = (Status)req.status;
 
             var id = await createMenu.Execute(
                 name: req.name,
-                products: products,
-                status: status
+                products: ProductHelper.ConvertToDomainProduct(req.products),
+                status: (MenuStatus)req.status
                 );
 
             var menuOfId = new MenuOfId(_repo);
@@ -94,12 +85,26 @@ namespace InaMenu.Controllers
             };
         }
 
-       
-
         // PUT api/<MenuController>/5
+        [MenuStatusNotDefinedExcpetionFilter]
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<UpdateMenuResponse> Put(string id, UpdateMenuRequest req)
         {
+            if (!Enum.IsDefined(typeof(MenuStatus), req.status))
+            {
+                throw new MenuStatusNotDefinedException(req.status);
+            }
+
+            UpdateMenu updateMenu = new UpdateMenu(_repo)
+            {
+                Name = req.name,
+                Products = ProductHelper.ConvertToDomainProduct(req.products),
+                Status = (MenuStatus)req.status
+            };
+
+            await updateMenu.Execute(id);
+
+            return new UpdateMenuResponse();
         }
 
         // DELETE api/<MenuController>/5

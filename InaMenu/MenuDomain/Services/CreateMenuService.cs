@@ -15,7 +15,7 @@ namespace InaMenu.MenuDomain.Services
         public Task<string> Execute(
             string name,
             Dictionary<string, Product> products,
-            Status status
+            MenuStatus status
             )
         {
             Menu menu = new Menu(

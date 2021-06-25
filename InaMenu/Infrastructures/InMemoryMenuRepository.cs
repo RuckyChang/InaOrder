@@ -75,13 +75,12 @@ namespace InaMenu.Infrastructures
             if (_storage.ContainsKey(menu.Id))
             {
                 _storage[menu.Id] = menu;
+                return Task.FromResult(menu.Id);
             }
 
             _storage.Add(menu.Id, menu);
 
             return Task.FromResult(menu.Id);
         }
-
-       
     }
 }

@@ -2,7 +2,7 @@
 
 namespace InaMenu.MenuDomain
 {
-    public enum Status {
+    public enum MenuStatus {
         Diabled = 0,
         Enabled = 1
     }
@@ -12,19 +12,32 @@ namespace InaMenu.MenuDomain
         public string Id { get; set; }
         public string Name { get; set; }
         public Dictionary<string, Product> Products { get; set; }
-        public Status Status { get; set; }
+        public MenuStatus Status { get; set; }
 
         public Menu(
            string id,
            string name,
            Dictionary<string, Product> products,
-           Status status
+           MenuStatus status
            )
         {
             Name = name;
             Products = products;
             Status = status;
             Id = id;
+        }
+
+        public void ChangeName(string name)
+        {
+            if (!string.IsNullOrEmpty(name))
+            {
+                Name = name;
+            }
+        }
+
+        public void ChangeStatus(MenuStatus status)
+        {
+            Status = status;
         }
 
         public void AppendProduct(Product product)
@@ -49,12 +62,12 @@ namespace InaMenu.MenuDomain
 
         public void Enable()
         {
-            Status = Status.Enabled;
+            Status = MenuStatus.Enabled;
         }
 
         public void Disable()
         {
-            Status = Status.Diabled;
+            Status = MenuStatus.Diabled;
         }
     }
 }

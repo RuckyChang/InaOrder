@@ -16,7 +16,7 @@ namespace InaMenu.Application
         public Task<string> Execute(
             string name,
             Dictionary<string, Product> products,
-            Status status
+            MenuStatus status
             )
         {
             CreateMenuService service = new CreateMenuService(_repo);

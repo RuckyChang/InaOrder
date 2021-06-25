@@ -9,7 +9,7 @@ namespace InaMenu.Controllers.Menu.Package
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public Dictionary<string, Product> Products { get; set; }
+        public List<Product> Products { get; set; }
         public int Status { get; set; }
     }
 }

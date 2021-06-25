@@ -1,15 +1,37 @@
-﻿using System.Collections.Generic;
+﻿using InaMenu.MenuDomain;
+using System.Collections.Generic;
 
 namespace InaMenu.Controllers.Menu.Package
 {
     public class ProductHelper
     {
-        public static Dictionary<string, Product> ConvertToHttpPackageProduct(Dictionary<string, MenuDomain.Product> products)
+        public static Dictionary<string, MenuDomain.Product> ConvertToDomainProduct(List<Product> products)
         {
-            Dictionary<string, Product> result = new Dictionary<string, Product>();
+            Dictionary<string, MenuDomain.Product> result = new Dictionary<string, MenuDomain.Product>();
+
+            foreach (var product in products)
+            {
+                var Price = product.Price;
+
+                result.Add(product.Id, new MenuDomain.Product(
+                    id: product.Id,
+                    name: product.Name,
+                    price: new MenuDomain.Price(
+                        currency: (Currency)Price.Currency,
+                        quantity: Price.Quantity
+                        )
+                ));
+            }
+
+            return result;
+        }
+
+        public static List<Product> ConvertToHttpPackageProduct(Dictionary<string, MenuDomain.Product> products)
+        {
+            List<Product> result = new List<Product>();
             foreach (var kvp in products)
             {
-                result.Add(kvp.Key, ConvertToHttpPackageProduct(kvp.Value));
+                result.Add(ConvertToHttpPackageProduct(kvp.Value));
             }
 
             return result;
