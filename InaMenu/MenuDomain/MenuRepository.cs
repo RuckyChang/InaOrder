@@ -9,5 +9,6 @@ namespace InaMenu.MenuDomain
         public Task<List<Menu>> All();
         public Task<Menu> OfId(string id);
         public Task<string> Save(Menu menu);
+        public Task Remove(string id);
     }
 }

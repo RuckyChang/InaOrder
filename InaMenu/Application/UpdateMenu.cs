@@ -7,7 +7,6 @@ namespace InaMenu.Application
     public class UpdateMenu
     {
         private MenuRepository _repo;
-
         public string Name { get; set; }
         public Dictionary<string, Product> Products { get; set; }
         public MenuStatus Status { get; set; }

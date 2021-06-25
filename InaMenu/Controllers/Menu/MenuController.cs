@@ -109,8 +109,13 @@ namespace InaMenu.Controllers
 
         // DELETE api/<MenuController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<DeleteResponse> Delete(string id)
         {
+            var deleteMenu = new DeleteMenu(_repo);
+
+            await deleteMenu.Execute(id);
+
+            return new DeleteResponse();
         }
     }
 }

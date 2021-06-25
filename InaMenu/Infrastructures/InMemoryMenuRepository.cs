@@ -82,5 +82,12 @@ namespace InaMenu.Infrastructures
 
             return Task.FromResult(menu.Id);
         }
+
+        public Task Remove(string id)
+        {
+            _storage.Remove(id);
+
+            return Task.CompletedTask;
+        }
     }
 }
